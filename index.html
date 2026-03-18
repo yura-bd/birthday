@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap" rel="stylesheet">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="container fade-in">
+        
+        <div class="main-bubble">
+            <p>今回は少しだけ、日頃の感謝を伝えたくて。</p>
+            
+            <p>毎日話すわけじゃないけど、たまにこうやって楽しく話せたり、繋がっていられるのがすごくいいなって思ってるよ。</p>
+            
+            <p>あと、ゆらが載せてくれる犬の写真！あれを見るのが本当に好きで、いつも幸せな気持ちをもらってます。</p>
+            
+            <p>今日はリラックスして、ゆららしく最高の誕生日を過ごしてね。今のままの君がすごく素敵だと思うから。</p>
+            
+            <p>これからも、時々こうやって話せたら嬉しいな!</p>
+            <hr class="divider">
+            
+            <div id="surprise-container" onclick="revealSurprise()">
+                <div id="surprise-img">
+                    <svg viewBox="0 0 24 24" width="90" height="90" stroke="#ff8b94" stroke-width="1.5" fill="#FFFDF7" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                        <rect x="2" y="7" width="20" height="5" fill="#FFC0CB"></rect>
+                        <line x1="12" y1="22" x2="12" y2="7"></line>
+                        <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" fill="#FFFACD"></path>
+                        <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" fill="#FFFACD"></path>
+                    </svg>
+                </div>
+                <p id="click-hint">ここを押してね！</p>
+            </div>
+
+            <div id="revealed-section" class="hidden-section">
+                <h1>ゆら、Happy Birthday!</h1>
+                
+                <model-viewer 
+                    src="chiikawa.glb" 
+                    alt="Chiikawa with a party hat" 
+                    auto-rotate 
+                    camera-controls 
+                    rotation-per-second="30deg">
+                </model-viewer>
+            </div>
+            
+        </div> </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
