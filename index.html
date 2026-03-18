@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday!</title>
+    <title>Happy Birthday Yura! 🎉</title>
+<meta name="title" content="Happy Birthday Yura! 🎉">
+<meta name="description" content="A little something for your special day. Click to open!">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yura-bd.github.io/birthday-yura/">
+<meta property="og:title" content="Happy Birthday Yura! 🎉">
+<meta property="og:description" content="A little something for your special day. Click to open!">
+<meta property="og:image" content="preview.jpg"> <meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://yura-bd.github.io/birthday-yura/">
+<meta property="twitter:title" content="Happy Birthday Yura! 🎉">
+<meta property="twitter:description" content="A little something for your special day. Click to open!">
+<meta property="twitter:image" content="preview.jpg">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap" rel="stylesheet">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
@@ -40,13 +52,19 @@
                 <h1>ゆら、Happy Birthday!</h1>
                 
                 <model-viewer 
-                    src="chiikawa.glb" 
-                    alt="Chiikawa with a party hat" 
-                    auto-rotate 
-                    camera-controls 
-                    rotation-per-second="30deg"
-                    loading=“eager”>
-                </model-viewer>
+    src="chiikawa.glb" 
+    alt="Chiikawa" 
+    auto-rotate 
+    camera-controls 
+    rotation-per-second="30deg"
+    loading="eager"
+    id="bday-model">
+    
+    <div slot="poster" class="loading-screen">
+        <div class="loading-text">読み込み中...</div>
+        <div class="loading-subtext">ちょっと待ってね！</div>
+    </div>
+</model-viewer>
             </div>
             
         </div> </div>
